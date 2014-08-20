@@ -1,0 +1,21 @@
+Chapter 8-Clases
+   A class modifier: public,protected, abstract,static,final,strictfp,private.
+
+
+   A constructor can be private, protected or public.
+
+   Methods can be: native, abstract, synchronized
+
+   The access modifier
+        public pertains only to top level classes and to member classes not to local classes  or
+        anonymous classes The access modifiers protected and private  pertain only to member
+        classes within a directly enclosing class or enum declaration The modifier
+        static pertains only to member classes not to top level or local or anonymous classes.
+        It is a compile-time error if the same modifier appears more than once in a class
+        declaration.
+
+   It's a compile error if it would imposible for any sublcass of Class to provide an implementation of  a
+   method M, taking n argument type int, that can be satisfaced by the class and the interface.
+
+   Enum class cannot be declared abstract.
+   Construct can't be static.

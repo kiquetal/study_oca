@@ -1,0 +1,27 @@
+Capitulo 9.
+
+Interfaces:
+    modificadores: public, protected,private,abstract,static,strictfp
+
+    /protected and private only directly enclosed.
+    static never to a top level interfaces.
+
+    All interfaces are implicitily abstract
+    "strictfp",all double or float are explicitily FP-strict.
+
+    "extends" for another interface."ClassCircularityError".
+    all members are public static final.
+
+    Can't appear this or super   in a initilization expresion for a field in a interface, unless they
+    appear to anonymous class.(compile error)
+
+    Every method in interface are implicitily public.
+    Every method in interface are implicitily abstract.
+
+    static method can't be abstract.
+
+    "implementation PROPERETIES types "are: strictfp,native or synchronized.(compilation error).
+
+    Can't be final method.
+
+
