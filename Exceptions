@@ -1,0 +1,55 @@
+RuntimeExceptions
+ SecurityException
+ NullPointerException
+ IllegalArgumentException
+ NumberFormatException
+ ClassCastException
+ ArithmeticException
+ IllegalStateException
+
+Checked Exceptions
+IOException
+FileNotFoundException
+NoSuchMethodException
+InterruptedException{byteTransferred}
+SQLException
+FontFormatException
+ClassNotFoundException
+CloneNotSupportedException
+
+
+Error class and Exception Class are subclasses of Throwable.
+Part of the java.lang
+
+
+VirtualMachineError
+ -InternalError
+ -OutOfMemoryError
+ -StackOverflowError
+ -UnknownError
+
+ The unchecked exception classes are the run-time exception classes and the error
+classes.
+The checked exception classes are all exception classes other than the unchecked
+exception classes. That is, the checked exception classes are all subclasses of
+Throwable other than RuntimeException and its subclasses and Error and its
+subclasses.
+
+Constructor can throw Exceptions
+
+
+Compilation error if you throw a not ThrowableClass
+
+If a catch block handles more than one exception type, then the catch parameter is implicitly final.
+
+Exception(checked)
+
+
+IOException                         CloneNotSupportedException                       RuntimeException
+ EOFException
+ FIleNotFoundException                                                               ClassCastException,IllegalArgumentException
+ MalformedURLException
+ UnkwnonHostException
+ InterruptedException
+
+AutoClosable

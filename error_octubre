@@ -1,0 +1,18 @@
+object instanceof Number
+
+=>
+ object != PRIMITIVES!
+
+
+ When possible loss of precision, the number changes.
+
+
+Ternary operation, muste be a return invocation!
+
+
+top level
+
+
+ Compilation error when comparing two object with differente hierachy
+
+ Interface when accesing variable only that interfaces is loaded.

@@ -10,7 +10,7 @@ Interfaces:
     "strictfp",all double or float are explicitily FP-strict.
 
     "extends" for another interface."ClassCircularityError".
-    all members are public static final.
+    all members/fields are public static final.
 
     Can't appear this or super   in a initilization expresion for a field in a interface, unless they
     appear to anonymous class.(compile error)
@@ -20,8 +20,17 @@ Interfaces:
 
     static method can't be abstract.
 
-    "implementation PROPERETIES types "are: strictfp,native or synchronized.(compilation error).
+    "implementation PROPERETIES types are": strictfp,native or synchronized.(compilation error).
 
     Can't be final method.
 
 
+Only modifier allowed are: public or abstract, o none.
+
+
+Note that a method declared in an interface must not be declared strictfp or native or synchronized, or a compile-time error occurs,
+because those keywords describe implementation properties rather than interface properties.
+However, a method declared in an interface may be implemented by a method that is declared strictfp or native or synchronized in a class that implements the interface.
+
+Even if two distinct inherited fields have the same type, the same value, and are both final,
+any reference to either field by simple name is considered ambiguous and results in a compile-time error. In the example:

@@ -1,0 +1,62 @@
+Garbage collector.
+===========================================================================
+Only is elegible if there is no reference  apointing to the object,or a object that cannot be reference by any other.
+
+Ex.:
+
+A a =new A();
+A b=new A();
+
+  b=a;
+  a=null;
+
+
+Graphics representation
+===============================
+
+Only object object B is collectible for gc.
+
+
+================
+     a
+ _______               ___
+|  --- ------------ > |   |
+|_______|             |   |
+                      |___|
+
+    b
+ _______               ___
+|   --------------- > |   |
+|_______|             |   |
+                      |___|
+
+
+    [B]b = a;[/B]
+
+
+    a
+ _______               ___
+|   --------------- > |   |
+|_______|       --- > |   |
+               |      |___|
+               |
+    b          |
+ _______       |       ___
+|   -----------       |   |
+|_______|             |   | < --- Ready to be collected by GC
+                      |___|
+
+
+    [B]a = null;[/B]
+
+
+                 ---- > null
+    a           |
+ _______        |      ___
+|   ------------      |   |
+|_______|       --- > |   | < ---Can't be collected by GC
+               |      |___|
+               |
+    b          |
+ _______       |       ___
+|   -----------       |   |

@@ -19,3 +19,49 @@ Chapter 8-Clases
 
    Enum class cannot be declared abstract.
    Construct can't be static.
+
+   Method signature are:same name and argument type:
+     -They have the same number of formal parameters.
+     -They have the same number of type parameters.
+
+
+   Never access a instance from static context.
+
+   Abstract method cannot be declare with private,static,final,native,strictfp.
+
+
+ Static methods.
+  can't use this or super.
+
+  Instance methods cannot override static methods.
+
+  Instance initializers cannot have a return statement.
+
+  Static initilizers cannot have a return statement, neither access to "this" or "super"
+
+
+  Construct modifier are: public,proteced,private `cannot be:static,final,abstract,native,strictfp`
+
+
+"Unlike methods, a constructor cannot be abstract, static, final, native, strictfp,
+or synchronized:
+••••••A constructor is not inherited, so there is no need to declare it final.
+An abstract constructor could never be implemented.
+A constructor is always invoked with respect to an object, so it makes no sense for a
+constructor to be static.
+There is no practical need for a constructor to be synchronized, because it would lock
+the object under construction, which is normally not made available to other threads until
+all constructors for the object have completed their work.
+The lack of native constructors is an arbitrary language design choice that makes it easy
+for an implementation of the Java Virtual Machine to verify that superclass constructors
+are always properly invoked during object creation.
+The inability to declare a constructor as strictfp (in contrast to a method (§8.4.3))
+is an intentional language design choice; it effectively ensures that a constructor is FP-
+strict if and only if its class is FP-strict (§15.4).
+         "
+
+Construtors of enum type cannot be declared public or protected.
+  If no access modifier are declared for the enum, then has private access.
+
+
+Constructors are methods BE VERY CAREFULL WHEN OVERLOAD!!
