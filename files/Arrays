@@ -1,0 +1,16 @@
+Array
+
+public static arraycopy(Object src,int srcPos,Obeject dest,int destPos,int length)
+
+=> System.arraycopy();
+
+
+
+Arrays :must be initialized after they are declared.
+
+
+
+ArrayList from java.util.*;
+-Automatically resize when capacitiy is excedeed.
+ Can't store primitive without their wrappers.
+
